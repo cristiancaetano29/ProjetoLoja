@@ -1,0 +1,17 @@
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+    </head>
+
+    <body>
+        <h1><%=title%></h1>
+
+        <form action= "/novoProduto" method="POST">
+            <p><label for="nome">Nome</label></p>
+            <p><input type="text" name="nome" id= "nome"/></p>
+            <p><label for="preco">Preço</label></p>
+            <p><input type="number" name="preco" id = "preco"/></p>
+            <p><input type="submit" value="Incluir"/></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="/css/Style.css" type="text/css">
+</head>
+<body>
+    <h1><%= title %></h1>
+        <form action="<%=action%>" method="POST">
+            <p>Nome: <input type="text" name="nome" value="<%= produto.nome %>"></p>
+            <p>Preço: <input type="number" name="preco" value="<%= produto.preco %>"></p>
+            <input type="submit" value="Alterar" id="alter">
+        </form>
+</body>
+</html>

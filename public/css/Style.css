@@ -1,0 +1,183 @@
+:root{
+    --color1 : rgb(129, 183, 255);
+    --corBorda: white;
+}
+body{
+    background-color: #4c6c81;
+    animation-name: animacao1;
+    animation-duration: 4s;
+    display: block;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: var(--color1);
+    width: 350px;
+    border-radius: 20px;
+}
+
+table{
+    margin: auto; 
+    background-color: var(--color1);
+    border-style: outset;
+    animation-name: animacao2;
+    animation-duration: 4s;
+}
+
+tbody{
+    padding-top: 30px;
+}
+
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form label{
+    font-size: 20px;
+}
+
+form input{
+    border-radius: 20px;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#nomes{
+    padding-left: 30px;
+    padding-top: 4px;
+    font-size: 19px;
+    animation-name: animacao3;
+    animation-duration: 4s;
+}
+
+a{
+    animation-name: animacao3;
+    animation-duration: 4s;
+    margin-left: 20px;
+}
+
+img{
+    animation-name: sizeAnim;
+    animation-duration: 4s;
+    max-width: 25px;
+    min-height: 25px;
+    width: auto;
+    height: auto;
+}
+
+#nomeCima{
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    animation-name: animacao4;
+    animation-duration: 4s;
+}
+#teste{
+    justify-content: center;
+    align-items: center;
+}
+
+#newProd{
+    text-decoration: unset;
+    font-size: 20px;
+    color: var(--corBorda);
+    /*display: block;
+    margin-top: 20px;
+    text-align: left;
+    padding-left:370px;*/
+}
+
+p{
+    font-size: 20px;
+}
+
+
+/* ANIMAÇÕES NA PÁGINA */
+@keyframes animacao1{
+
+    from{
+        background-color: rgb(0, 17, 39);
+    }
+
+    for{
+        background-color: var(--color1);
+    }
+}
+
+@keyframes animacao2{
+
+    from{
+        width: 600px;
+    }
+
+    for{
+        margin: auto;
+    }
+}
+
+@keyframes animacao3{
+
+    from{
+        font-size: 0px;
+        color: var(--color1);
+    }
+
+    for{
+        font-size: 19px;
+        color: black;
+    }
+}
+
+@keyframes animacao4{
+
+    from{
+        font-size: 0px;
+        color: var(--color1);
+    }
+
+    for{
+        font-size: 25px;
+        color: black;
+    }
+}
+
+@keyframes animacaoRota{
+
+    0%{
+        background-color: blue;
+    }
+
+    50%{
+        background-color: white;
+    }
+
+    100%{
+        background-color: var(--color1);
+    }
+}
+
+@keyframes sizeAnim{
+    0%{
+        max-width: 50px;
+        min-height: 50px;
+    }
+
+    50%{
+        max-width: 40px;
+        min-height: 40px;
+    }
+
+    100%{
+        max-width: 25px;
+        min-height: 25px;
+    }
+}

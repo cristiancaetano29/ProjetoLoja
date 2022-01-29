@@ -1,0 +1,46 @@
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+    </head>
+    <body>
+        <h1>
+            Lista dos Produtos
+        </h1>
+
+        <table>
+            <tr>
+                <td id="nomeCima">
+                    <strong>
+                        Nomes:
+                    </strong>
+                </td>
+                <td id="nomeCima">
+                    <strong>
+                        Preços:
+                    </strong>
+                </td>
+            </tr>
+            <%
+                ListaProdutos.forEach((esquemaProduto) =>{
+            %>
+            <tr>
+                <td id="nomes">
+                    <%= esquemaProduto.nome %>
+                </td>
+                <td id="nomes">R$
+                    <%= esquemaProduto.preco.toFixed(2) %>
+                </td>
+                <td>
+                    <a href="/editar/<%= esquemaProduto._id %>"><img src="/Images/editar.png"></a>
+                    <a href="/deletarProduto/<%= esquemaProduto._id %>"><img src="/Images/lata.png"></a>
+                </td> 
+            </tr>
+                <a href=""></a>
+            <% }) %>
+        </table>
+
+        <tfoot>
+            <a href="/novoProduto" id="newProd">Inserir Novo Produto</a>
+        </tfoot>
+    </body>
+</html>
