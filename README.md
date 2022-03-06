@@ -2,8 +2,8 @@
 
 ## Descrição
 <p>
-  Adicionar itens a uma lista que sera exibida a um usuário, os itens podem ser excluidos, alterados e inseridos.
-  Todos os objetos colocados são enviado para o banco de dados onde estaram quardados.
+  Adicionar itens a uma lista que sera exibida a um usuário, os itens podem ser excluidos, alterados e inseridos,
+  todos os objetos colocados são enviado para o banco de dados onde estaram quardados.
 </p>
 
 ### Desenvolvido com:
